@@ -1,0 +1,253 @@
+@use '../setting/config' as *;
+@use '../mixin/_mixin' as *;
+
+/* ======================================
+* FV
+* =================================== */
+.fv {
+  background-image: $section-color;
+
+  &__inner {
+    position: relative;
+    height: 700px;
+    @include mq(md) {
+      padding: 0 20px;
+    }
+  }
+
+  &__text-area {
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    z-index: 1;
+    @include mq(md) {
+      top: 60%;
+    }
+  }
+
+  &__text-area-inner {
+    position: relative;
+  }
+
+  &__text {
+    color: $main-color;
+    font-size: 24px;
+    letter-spacing: 5%;
+    line-height: 1em;
+    font-weight: bold;
+  }
+
+  &__title {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: clamp(1.5rem, -0.208rem + 8.54vw, 6.25rem);
+    line-height: 1em;
+    letter-spacing: 1.6%;
+  }
+
+  &__date {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 41.4px;
+    letter-spacing: 7%;
+  }
+
+  &__btn {
+    margin-top: 32px;
+    @include push-btn(300px, 66px, 9999px, #DD118E);
+  }
+
+  &__singe {
+    position: absolute;
+    width: 326px;
+    bottom: 40px;
+    right: 37px;
+    transform: rotate(13turn);
+    @include mq(md) {
+      width: 150px;
+      right: 0;
+      bottom: 70px;
+    }
+  }
+
+  &__img {
+    width: 560px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    @include mq(sp) {
+      right: 50%;
+      transform: translateX(50%);
+    }
+  }
+
+  &__img-inner {
+    position: relative;
+  }
+
+  &__img-user {
+    position: absolute;
+    bottom: 20px;
+    right: 0;
+    color: #fff;
+    @include mq(md) {
+      right: 50%;
+      transform: translateX(50%);
+    }
+  }
+
+  &__img-name {
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 1em;
+    letter-spacing: -6%;
+    @include mq(md) {
+      font-size: 18px;
+    }
+  }
+
+  &__img-job {
+    margin-top: 3px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1em;
+    letter-spacing: 5%;
+  }
+}
+
+/* ======================================
+* section common
+* =================================== */
+.section {
+  padding: 110px 0;
+  background-color: #141414;
+  @include mq(md) {
+    padding: 80px 0;
+  }
+
+  &__title--en {
+    color: $main-color;
+    font-size: 60px;
+    letter-spacing: 5%;
+    line-height: 1em;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  &__title--ja {
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 5%;
+    line-height: 1em;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  &__body {
+    margin-top: 60px;
+  }
+}
+
+/* ======================================
+* about
+* =================================== */
+.about {
+  color: #fff;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include mq(md) {
+      flex-direction: column;
+    }
+  }
+
+  &__text {
+    width: 58.8%;
+    margin-left: 69px;
+    @include mq(md) {
+      width: 100%;
+      text-align: center;
+      margin-left: 0;
+      margin-top: 30px;
+    }
+  }
+
+  &__title {
+    font-size: 48px;
+    letter-spacing: 10%;
+    line-height: 1em;
+    font-weight: bold;
+    margin-top: 20px;
+    color: $main-color;
+  }
+
+  &__sub-title {
+    font-size: 24px;
+    line-height: 27.6px;
+    font-weight: bold;
+  }
+
+  &__writing {
+    margin-top: 40px;
+    font-size: 18px;
+    line-height: 32.4px;
+    letter-spacing: 5%;
+  }
+
+  &__img {
+    width: 41.2%;
+    @include mq(md) {
+      width: 100%;
+    }
+  }
+
+  &__table {
+    margin-top: 25px;
+    table {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 38px 10px;
+      @include mq(md) {
+        text-align: left;
+        border-spacing: 20px 10px;
+      }
+      th {
+        font-size: 16px;
+        line-height: 18.4px;
+        letter-spacing: 5%;
+        font-weight: bold;
+        @include mq(sp) {
+          width: 20%;
+        }
+      }
+      td {
+        font-size: 16px;
+        line-height: 18.4px;
+        letter-spacing: 5%;
+        @include mq(sp) {
+          width: 80%;
+        }
+      }
+    }
+  }
+
+  &__btn {
+    margin-top: 25px;
+    @include push-btn(230px, 76px, 9999px, #DD118E);
+    @include mq(md) {
+      a {
+        margin-inline: auto;
+      }
+    }
+  }
+}
+
+/* ======================================
+* speaker
+* =================================== */

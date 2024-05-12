@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <!-- テストサイトのための設定 -->
+  <meta name="robots" content="noindex,nofollow">
+  <!-- メタ情報 -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+
+  <!-- OGPなど -->
+  <title>WDC</title>
+  <meta name="description" content="">
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <meta property="og:site_name" content="">
+  <meta property="og:description" content="">
+  <meta name="twitter:card" content="summary">
+
+  <!-- Favicon -->
+  <link rel="icon" href="./img/">
+  <link rel="apple-touch-icon" href="./img/favicon.png">
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+
+  <!-- css -->
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/front-page.css">
+
+  <!-- fontawesome -->
+  <script src="https://kit.fontawesome.com/33b766862d.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+  <header class="header">
+    <div class="wrapper header__inner">
+      <div class="header__logo">
+        <h1 class="header__title">WDC</h1>
+      </div>
+      <div class="header__nav">
+        <!-- グローバルナビゲーション -->
+        <nav class="gnav">
+          <ul class="gnav__list">
+            <li class="gnav__item">
+              <a class="gnav__link" href="#about">ABOUT</a>
+            </li>
+            <li class="gnav__item">
+              <a class="gnav__link" href="#speaker">SPEAKER</a>
+            </li>
+            <li class="gnav__item">
+              <a class="gnav__link" href="#session">SESSION</a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- モバイルナビゲーション -->
+        <nav class="sp-gnav">
+          <button id="navbtn" type="button" class="sp-gnav__btn">
+            <i id="bars" class="fa-solid fa-bars fa-2x"></i>
+            <i id="xmark" class="fa-solid fa-x fa-2x hidden"></i>
+          </button>
+          <ul id="menu" class="sp-gnav__list translate-x-full">
+            <li class="sp-gnav__item">
+              <a class="sp-gnav__link" href="#about">ABOUT</a>
+            </li>
+            <li class="sp-gnav__item">
+              <a class="sp-gnav__link" href="#speaker">SPEAKER</a>
+            </li>
+            <li class="sp-gnav__item">
+              <a class="sp-gnav__link" href="#session">SESSION</a>
+            </li>
+          </ul>
+        </nav>
+
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <section class="fv">
+      <div class="container">
+        <div class="wrapper">
+          <div class="fv__inner">
+            <div class="fv__text-area">
+              <div class="fv__text-area-inner">
+                <p class="fv__text">Web Design Conference vol.24</p>
+                <h2 class="fv__title">WORK<br>REVOLUTION</h2>
+                <p class="fv__date">2030.05.30</p>
+                <div class="fv__btn">
+                  <a href="#contact" class="fv__link">お申し込み</a>
+                </div>
+                <div class="fv__singe">
+                  <img src="./img/teiji-de-kaerumon.png" alt="">
+                </div>
+              </div>
+            </div>
+
+            <div class="fv__img">
+              <div class="fv__img-inner">
+                <img src="./img/ogp_mv.png" alt="">
+                <div class="fv__img-user">
+                  <p class="fv__img-name">ショーン・デイビット・ジュニア氏</p>
+                  <p class="fv__img-job">Webデザイナー</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about section">
+      <div class="container">
+        <div class="wrapper">
+          <div class="section__header">
+            <h2 class="section__title--en">ABOUT</h2>
+            <div class="section__title--ja">イベントについて</div>
+          </div>
+          <div class="section__body about__inner">
+            <div class="about__img">
+              <img src="./img/about.png" alt="">
+            </div>
+            <div class="about__text">
+              <p class="about__sub-title">テーマ</p>
+              <h3 class="about__title">定時で帰る</h3>
+              <p class="about__writing">残業は心と体に良くないです。世界最速で定時に帰る男、ショーン・デイビット・ジュニア氏が定時で帰るためのスペシャルな技を紹介！ さぁ、Let's go home now!</p>
+              <div class="about__table">
+                <table>
+                  <tbody>
+                    <tr>
+                      <th>日時</th>
+                      <td>2030年5月30日（土） 13:00-翌朝13:00</td>
+                    </tr>
+                    <tr>
+                      <th>会場</th>
+                      <td>オンライン</td>
+                    </tr>
+                    <tr>
+                      <th>定員</th>
+                      <td>3名</td>
+                    </tr>
+                    <tr>
+                      <th>参加費</th>
+                      <td>無料</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="about__btn">
+                <a href="#contact" class="about__link">お申し込み</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="speaker section">
+      <div class="container">
+        <div class="wrapper">
+          <div class="section__header">
+            <h2 class="section__title--en">SPEAKER</h2>
+            <div class="section__title--ja">スピーカー</div>
+          </div>
+          <div class="section__body speaker__inner">
+            <div class="speaker__card">
+              <div class="speaker__img">
+                <img src="./img/sean.png" alt="">
+              </div>
+              <div class="speaker__text">
+                <p class="speaker__name--en">Shawn David Jr</p>
+                <p class="speaker__name--ja">ショーン・デイビット・ジュニア</p>
+                <p class="speaker__writing">
+                  株式会社スタート代表取締役。Webデザイナー。<br>
+                  定時になると仕事用の脳と身体機能が停止し自動的に帰路につく男。ショーン氏のその姿は人間と言うよりもさながらアンドロイドのようである。<br>
+                  ショーン氏は著書『会社ではアンドロイドになれ』の中でこう語っている。<br>
+                  「会社における仕事において、我々は自分を機械、そうアンドロイドと思い込むべきだ。定時になれば自動で仕事用の機能は停止されるのだ。決められた時間に、設定されたタスクのみを行う、それがアンドロイドの役目だろう？そして、それは会社で働く我々人間の権利でもある」<br>
+                  アンドロイドのように働くべきと語るショーン氏の考え方はディストピア思想と揶揄されるが、本イベントでは氏の考え方をたっぷりと味わいたい。
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="./js/main.js"></script>
+</body>
+</html>
