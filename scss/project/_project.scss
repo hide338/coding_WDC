@@ -251,3 +251,69 @@
 /* ======================================
 * speaker
 * =================================== */
+.speaker {
+  background-image: $section-color;
+
+  &__card {
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    margin-top: 80px;
+    &:first-of-type {
+      margin-top: 0;
+    }
+    &:nth-child(odd) {
+      flex-direction: row-reverse;
+      .speaker__img {
+        margin-right: 0;
+        margin-left: 60px;
+        @include mq(md) {
+          width: 100%;
+          margin-left: 0;
+        }
+      }
+    }
+    @include mq(md) {
+      flex-direction: column !important;
+    }
+  }
+
+  &__img {
+    margin-right: 60px;
+    width: 40.8%;
+    @include mq(md) {
+      width: 100%;
+      margin-right: 0;
+    }
+  }
+
+  &__text {
+    width: 59.2%;
+    @include mq(md) {
+      width: 100%;
+      margin-top: 30px;
+    }
+  }
+
+  &__name--en {
+    font-size: 42px;
+    letter-spacing: 5%;
+    line-height: 1em;
+    font-weight: bold;
+    color: $main-color;
+  }
+
+  &__name--jp {
+    font-size: 18px;
+    line-height: 1em;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+
+  &__writing {
+    margin-top: 40px;
+    font-size: 16px;
+    line-height: 28.8px;
+    letter-spacing: 5%;
+  }
+}

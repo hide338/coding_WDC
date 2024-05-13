@@ -1461,4 +1461,72 @@ Version: 1.0.0
 
 /* ======================================
 * speaker
-* =================================== *//*# sourceMappingURL=style.css.map */
+* =================================== */
+.speaker {
+  background-image: linear-gradient(135deg, #0E002E 10%, #1E092B 23%, #320C65 49%, #A01B7C 80%, #C21780 100%);
+}
+.speaker__card {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  margin-top: 80px;
+}
+.speaker__card:first-of-type {
+  margin-top: 0;
+}
+.speaker__card:nth-child(odd) {
+  flex-direction: row-reverse;
+}
+.speaker__card:nth-child(odd) .speaker__img {
+  margin-right: 0;
+  margin-left: 60px;
+}
+@media screen and (max-width: 768px) {
+  .speaker__card:nth-child(odd) .speaker__img {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .speaker__card {
+    flex-direction: column !important;
+  }
+}
+.speaker__img {
+  margin-right: 60px;
+  width: 40.8%;
+}
+@media screen and (max-width: 768px) {
+  .speaker__img {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+.speaker__text {
+  width: 59.2%;
+}
+@media screen and (max-width: 768px) {
+  .speaker__text {
+    width: 100%;
+    margin-top: 30px;
+  }
+}
+.speaker__name--en {
+  font-size: 42px;
+  letter-spacing: 5%;
+  line-height: 1em;
+  font-weight: bold;
+  color: #D136D1;
+}
+.speaker__name--jp {
+  font-size: 18px;
+  line-height: 1em;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.speaker__writing {
+  margin-top: 40px;
+  font-size: 16px;
+  line-height: 28.8px;
+  letter-spacing: 5%;
+}/*# sourceMappingURL=style.css.map */
