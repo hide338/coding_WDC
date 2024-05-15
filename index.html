@@ -37,7 +37,7 @@
 
 </head>
 <body>
-  <header class="header">
+  <header class="header js-scroll">
     <div class="wrapper header__inner">
       <div class="header__logo">
         <h1 class="header__title">WDC</h1>
@@ -80,6 +80,7 @@
       </div>
     </div>
   </header>
+
   <main class="main">
     <section class="fv">
       <div class="container">
@@ -213,7 +214,124 @@
         </div>
       </div>
     </section>
+
+    <section class="session section">
+      <div class="container">
+        <div class="wrapper">
+          <div class="section__header">
+            <h2 class="section__title--en">SESSION</h2>
+            <div class="section__title--ja">セッション</div>
+          </div>
+          <div class="section__body">
+            <ul class="session__inner">
+              <li class="session__item">
+                <div class="session__time">
+                  <p>13:00~14:00</p>
+                </div>
+                <div class="session__text">
+                  <p class="session__title">ライトニングトーク：定時に帰る、それはアンドロイドになること</p>
+                  <p class="session__speaker">スピーカー：ショーン・デイビット・ジュニア</p>
+                  <p class="session__writing">人間らしくあろうとすること、それが残業を生むのだ。さぁ！アンドロイドになるのだ！</p>
+                </div>
+              </li>
+              <li class="session__item">
+                <div class="session__time">
+                  <p>14:00-18:00</p>
+                </div>
+                <div class="session__text">
+                  <p class="session__title">ショーンのとっておきの定時に帰る方法</p>
+                  <p class="session__speaker">スピーカー：ショーン・デイビット・ジュニア</p>
+                  <p class="session__writing">アンドロイド的定時に帰る方法を紹介。ワタシ、テイジデカエリマス。</p>
+                </div>
+              </li>
+              <li class="session__item">
+                <div class="session__time">
+                  <p>18:00-24:00</p>
+                </div>
+                <div class="session__text">
+                  <p class="session__title">公私混同仕事術</p>
+                  <p class="session__speaker">スピーカー：ミホコ・テニース</p>
+                  <p class="session__writing">私は会社にもテニスラケットを持ち込む。そう、もういっそのこと仕事と趣味の境界線を消しましょう。</p>
+                </div>
+              </li>
+              <li class="session__item">
+                <div class="session__time">
+                  <p>24:00-13:00</p>
+                </div>
+                <div class="session__text">
+                  <p class="session__title">超ネット仕事術</p>
+                  <p class="session__speaker">スピーカー：ジェシカ・パンナコッタ</p>
+                  <p class="session__writing">７年間一度も外出せずに仕事をする方法を紹介。自宅大好きっ！</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="registor section">
+      <div class="container">
+        <div class="wrapper">
+          <div class="section__header">
+            <h2 class="section__title--en">REGISTOR</h2>
+            <div class="section__title--ja">お申し込み</div>
+          </div>
+          <div class="section__body">
+            <div class="registor__form">
+              <form action="" method="post" class="form">
+                <div class="form__group">
+                  <p class="form__label">ご職業<span class="mast">*必須</span></p>
+                  <div class="form__radio">
+                    <label><input type="radio" name="job" class="form__radio-btn" value="会社員" checked>会社員</label>
+                    <label><input type="radio" name="job" class="form__radio-btn" value="個人事業主" >個人事業主</label>
+                    <label><input type="radio" name="job" class="form__radio-btn" value="求職中" >求職中</label>
+                    <label><input type="radio" name="job" class="form__radio-btn" value="その他" >その他</label>
+                  </div>
+                </div>
+                <div class="form__group">
+                  <p class="form__label">名前<span class="mast">*必須</span></p>
+                  <input type="text" id="email" name="email" class="form__input" required>
+                </div>
+                <div class="form__group">
+                  <p class="form__label">メールアドレス<span class="mast">*必須</span></p>
+                  <input type="email" id="email" name="email" class="form__input" required>
+                </div>
+                <div class="form__group">
+                  <p class="form__label">電話番号<span class="sup">（半角数字ハイフンなし）</span></p>
+                  <input type="tel" id="tel" name="tel" class="form__input" required>
+                </div>
+                <div class="form__group">
+                  <p class="form__label">スピーカーに質問したいこと<span class="mast">*必須</span></p>
+                  <textarea name="question" placeholder="ご自由にお書きください"></textarea>
+                </div>
+                <div class="form__group">
+                  <div class="form__where-label">
+                    <p class="form__label">WDCをどちらでお知りになりましたか？</p>
+                    <p class="mast">*必須</p>
+                  </div>
+                  <select name="where" id="">
+                    <option value="">選択してください</option>
+                    <option value="SNS">SNS</option>
+                    <option value="検索エンジン">検索エンジン</option>
+                    <option value="紹介">紹介</option>
+                    <option value="その他">その他</option>
+                  </select>
+                </div>
+                <div class="form__btn">
+                  <button type="submit" class="form__submit">送信する</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
+
+  <footer class="footer">
+    <p class="footer__copyright">&copy; 2030 Web Design Conference</p>
+  </footer>
   <script src="./js/main.js"></script>
 </body>
 </html>

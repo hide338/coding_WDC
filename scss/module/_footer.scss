@@ -5,9 +5,22 @@
   フッター
 **********************************************/
 .footer {
-  background-color: $main-color;
-  padding-top: 42px;
-  padding-bottom: 32px;
+  background-color: $base-color;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  text-align: center;
+
+  &__copyright {
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 5%;
+    font-size: 16px;
+    line-height: 18.4px;
+    @include mq(md) {
+      font-size: 12px;
+      line-height: 1em;
+    }
+  }
 }
 
 .copyright {

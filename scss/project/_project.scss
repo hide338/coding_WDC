@@ -24,6 +24,7 @@
     z-index: 1;
     @include mq(md) {
       top: 60%;
+      width: 100%;
     }
   }
 
@@ -33,7 +34,7 @@
 
   &__text {
     color: $main-color;
-    font-size: 24px;
+    font-size: clamp(1.125rem, 0.973rem + 0.76vw, 1.5rem);
     letter-spacing: 5%;
     line-height: 1em;
     font-weight: bold;
@@ -42,7 +43,7 @@
   &__title {
     margin-top: 20px;
     font-weight: bold;
-    font-size: clamp(1.5rem, -0.208rem + 8.54vw, 6.25rem);
+    font-size: clamp(2.25rem, 0.63rem + 8.1vw, 6.25rem);
     line-height: 1em;
     letter-spacing: 1.6%;
   }
@@ -50,7 +51,7 @@
   &__date {
     margin-top: 10px;
     font-weight: bold;
-    font-size: 36px;
+    font-size: clamp(1.5rem, 1.196rem + 1.52vw, 2.25rem);
     line-height: 41.4px;
     letter-spacing: 7%;
   }
@@ -58,6 +59,13 @@
   &__btn {
     margin-top: 32px;
     @include push-btn(300px, 66px, 9999px, #DD118E);
+    a {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
   }
 
   &__singe {
@@ -130,7 +138,7 @@
 
   &__title--en {
     color: $main-color;
-    font-size: 60px;
+    font-size: clamp(2rem, 1.291rem + 3.54vw, 3.75rem);
     letter-spacing: 5%;
     line-height: 1em;
     font-weight: bold;
@@ -139,7 +147,7 @@
 
   &__title--ja {
     color: #fff;
-    font-size: 20px;
+    font-size: clamp(1.125rem, 1.074rem + 0.25vw, 1.25rem);
     letter-spacing: 5%;
     line-height: 1em;
     font-weight: bold;
@@ -179,7 +187,7 @@
   }
 
   &__title {
-    font-size: 48px;
+    font-size: clamp(1.5rem, 0.892rem + 3.04vw, 3rem);
     letter-spacing: 10%;
     line-height: 1em;
     font-weight: bold;
@@ -188,7 +196,7 @@
   }
 
   &__sub-title {
-    font-size: 24px;
+    font-size: clamp(1.25rem, 1.149rem + 0.51vw, 1.5rem);
     line-height: 27.6px;
     font-weight: bold;
   }
@@ -198,6 +206,9 @@
     font-size: 18px;
     line-height: 32.4px;
     letter-spacing: 5%;
+    @include mq(md) {
+      font-size: 16px;
+    }
   }
 
   &__img {
@@ -222,6 +233,9 @@
         line-height: 18.4px;
         letter-spacing: 5%;
         font-weight: bold;
+        @include mq(md) {
+          font-size: 14px;
+        }
         @include mq(sp) {
           width: 20%;
         }
@@ -230,6 +244,9 @@
         font-size: 16px;
         line-height: 18.4px;
         letter-spacing: 5%;
+        @include mq(md) {
+          font-size: 14px;
+        }
         @include mq(sp) {
           width: 80%;
         }
@@ -241,9 +258,17 @@
     margin-top: 25px;
     @include push-btn(230px, 76px, 9999px, #DD118E);
     @include mq(md) {
+      @include push-btn(230px, 66px, 9999px, #DD118E);
       a {
         margin-inline: auto;
       }
+    }
+    a {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
   }
 }
@@ -280,7 +305,7 @@
 
   &__img {
     margin-right: 60px;
-    width: 40.8%;
+    width: 42.4%;
     @include mq(md) {
       width: 100%;
       margin-right: 0;
@@ -288,7 +313,7 @@
   }
 
   &__text {
-    width: 59.2%;
+    width: 57.6%;
     @include mq(md) {
       width: 100%;
       margin-top: 30px;
@@ -296,7 +321,7 @@
   }
 
   &__name--en {
-    font-size: 42px;
+    font-size: clamp(1.25rem, 0.693rem + 2.78vw, 2.625rem);
     letter-spacing: 5%;
     line-height: 1em;
     font-weight: bold;
@@ -304,7 +329,7 @@
   }
 
   &__name--jp {
-    font-size: 18px;
+    font-size: clamp(1rem, 0.949rem + 0.25vw, 1.125rem);
     line-height: 1em;
     font-weight: bold;
     margin-top: 10px;
@@ -315,5 +340,233 @@
     font-size: 16px;
     line-height: 28.8px;
     letter-spacing: 5%;
+    @include mq(md) {
+      font-size: 14px;
+    }
   }
+}
+
+/* ======================================
+* session
+* =================================== */
+.session {
+  &__body {
+    margin-top: 130px;
+  }
+
+  &__item {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 28px 40px;
+    border-bottom: 1px solid $main-color;
+    color: #fff;
+    &:first-of-type {
+      padding-top: 0;
+    }
+    @include mq(md) {
+      padding: 20px 30px;
+      flex-direction: column;
+    }
+  }
+
+  &__time {
+    font-size: clamp(1.125rem, 1.024rem + 0.51vw, 1.375rem);
+    font-weight: bold;
+    line-height: 25.3px;
+    letter-spacing: 5%;
+  }
+
+  &__text {
+    margin-left: 64px;
+    flex: 1;
+    @include mq(md) {
+      margin-left: 0;
+      margin-top: 20px;
+    }
+  }
+
+  &__title {
+    font-size: clamp(1.125rem, 1.024rem + 0.51vw, 1.375rem);
+    line-height: 25.3px;
+    font-weight: bold;
+    letter-spacing: 5%;
+    color: $main-color;
+  }
+
+  &__speaker {
+    font-size: 15px;
+    line-height: 22.5px;
+    letter-spacing: 5%;
+    margin-top: 15px;
+    @include mq(md) {
+      font-size: 12px;
+    }
+  }
+  
+  &__writing {
+    font-size: 15px;
+    line-height: 22.5px;
+    letter-spacing: 5%;
+    @include mq(md) {
+      font-size: 12px;
+    }
+  }
+}
+
+/* ======================================
+* registor
+* =================================== */
+.registor {
+  background-image: url('#{$imgDir}form-bg.png');
+  background-repeat: round;
+  font-size: 16px;
+  @include mq(md) {
+    font-size: 14px;
+  }
+
+  &__form {
+    background-color: #141414;
+    border: 5px solid $main-color;
+    border-radius: 20px;
+    color: #fff;
+    padding: 90px 158px;
+    @include mq(md) {
+      padding: 60px 20px;
+    }
+  }
+
+}
+
+.form {
+  &__group {
+    margin-top: 30px;
+    &:first-of-type {
+      margin-top: 0;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    select {
+      background: #fff;
+      border-radius: 6px;
+      width: 100%;
+      max-width: 300px;
+      padding: 8px;
+      line-height: 18.4px;
+      color: $text-color;
+
+    }
+    input[type="tel"] {
+      max-width: 200px;
+    }
+    textarea {
+      background: #fff;
+      border-radius: 6px;
+      width: 100%;
+      max-width: 600px;
+      height: 200px;
+      padding: 8px;
+      color: $text-color;
+      line-height: 18.4px;
+
+    }
+  }
+
+  &__label {
+    margin-bottom: 10px;
+    line-height: 18.4px;
+    letter-spacing: 5%;
+    font-weight: bold;
+
+    .mast {
+      color: $main-color;
+      font-size: 11.2px;
+      line-height: 12.9px;
+      letter-spacing: 5%;
+      margin-left: 9px;
+    }
+
+    .sup {
+      font-size: 12px;
+      line-height: 13.8px;
+      letter-spacing: 5%;
+      margin-left: 5px;
+    }
+  }
+
+  &__radio {
+    display: flex;
+    align-items: center;
+    @include mq(md) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    label {
+      display: flex;
+      margin-left: 35px;
+
+      line-height: 18.4px;
+      letter-spacing: 5%;
+      
+      &:first-of-type {
+        margin-left: 0;
+      }
+      @include mq(md) {
+        margin-left: 0;
+        margin-top: 10px;
+        &:first-of-type {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+
+  &__radio-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__where-label {
+    display: flex;
+    @include mq(md) {
+      flex-direction: column;
+    }
+    .form__label {
+      @include mq(md) {
+        margin-bottom: 0;
+      }
+    }
+    .mast {
+      color: $main-color;
+      font-size: 11.2px;
+      line-height: 12.9px;
+      letter-spacing: 5%;
+      margin-left: 9px;
+      font-weight: bold;
+      @include mq(md) {
+        margin-left: 0;
+        margin-bottom: 10px;
+      }
+    }
+  }
+  
+  &__btn {
+    margin-top: 50px;
+    margin-inline: auto;
+    @include push-btn(300px, 76px, 9999px, #DD118E);
+    @include mq(md) {
+      margin-top: 30px;
+      @include push-btn(300px, 66px, 9999px, #DD118E);
+    }
+    button {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
 }

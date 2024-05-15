@@ -13,6 +13,17 @@ document.querySelectorAll('.nav-link').forEach(item => {
   });
 });
 
+// スクロールしたら表示
+window.addEventListener("scroll", function () {
+  const scroll_item = document.querySelector(".js-scroll");
+  const scroll = window.scrollY;
+  if (scroll > 90) {
+    scroll_item.classList.add("is-active");
+  } else {
+    scroll_item.classList.remove("is-active");
+  }
+});
+
 // スライドインする要素を取得
 const slideInElements = document.querySelectorAll('.js__slide-in');
 const rotateElements = document.querySelectorAll('.js__rotate');
